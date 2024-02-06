@@ -7,6 +7,7 @@ export default {
     "./resources/views/**/*.antlers.html",
     "./**/*.md",
     "./**/*.yaml",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
     extend: {},
@@ -19,6 +20,7 @@ export default {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/container-queries'),
+    require('tw-elements/dist/plugin.cjs'),
   ],
 }
 
