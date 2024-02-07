@@ -106,23 +106,22 @@
     <!-- Copyright -->
     <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700 flex justify-center items-center">
   
-        <span>© 2023 Copyright: </span>
+        <span>© 2024 Copyright: </span>
   
         <!-- Logo -->
         <a class="mx-3" href="#">
-          <img
-            src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
+          <img src="{{ Vite::asset('resources/images/rv-logo.svg') }}"
             class="h-5"
-            alt="TE Logo"
+            alt="RV Logo"
             loading="lazy"
           />
         </a>
   
         <a
           class="font-semibold text-neutral-600 dark:text-neutral-400"
-          href="https://tw-elements.com/"
+          href="https://www.rv-waarloos.be/"
         >
-          Tailwind Elements
+        {{ \Statamic\Facades\GlobalSet::findByHandle('site_instellingen')->inCurrentSite()['officiele_naam'] }}
         </a>
   
     </div>
