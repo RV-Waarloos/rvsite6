@@ -1,0 +1,21 @@
+tabs:
+  vereniging:
+    display: Vereniging
+    sections:
+      -
+        fields:
+          -
+            handle: officiele_naam
+            field:
+              input_type: text
+              character_limit: 64
+              antlers: false
+              type: text
+              display: 'Officiele naam'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
