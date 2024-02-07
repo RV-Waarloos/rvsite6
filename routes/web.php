@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/p', function () {
     return view('home');
 })->name('profile');
+
+Route::get('/r', function () {
+    return view('home');
+})->name('register');
+
+Route::get('/l', function () {
+    return view('home');
+})->name('login');
