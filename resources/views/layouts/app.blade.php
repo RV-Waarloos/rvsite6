@@ -17,7 +17,9 @@
 <body class="font-sans antialiased">
 <div class="min-h-screen flex flex-col bg-gradient-to-r from-sky-100 to-purple-100">
 
-    <livewire:layout.navigation/>
+    
+    <x-rv-navbar />
+    {{-- <livewire:layout.navigation/> --}}
 
     <!-- Page Heading -->
     @if (isset($header))
